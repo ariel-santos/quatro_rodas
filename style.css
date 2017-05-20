@@ -10,6 +10,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Text Domain: quatro_rodas
 */
-
+*{font-family: 'Oswald', sans-serif;}
 .no-margin{ margin: 0 !important;}
 .no-padding{ padding: 0 !important;}
+.responsive-img{width: 100%; }
+
+/* paina home */
+span.icone{ padding: 6px 6px; font-size: 10px; background: red; display: inline-block;}
+
+.modulo{ margin: 0 0 -6px 0; padding: 0; }
+.modulo a{ height: 0; }
+.modulo .modulo-text{ 
+	padding: 0;    position: absolute;
+    bottom: 20px;    padding: 5px 20px 5px 30px;    color: white;
+    text-align: right; text-transform: uppercase; font-weight: 700; 
+}
+.modulo .modulo-text h1{ font-size: 1.2em; margin: 0; font-weight:0; } 
+.modulo .modulo-text p{ margin:0; padding: 2px 0;} 
+
+.modulo .modulo-text span{ font-size: 0.8rem;}
+
+#container-novos{}
+#container-novos a{ color: black; display: inline-grid; width:100%;}
+#container-novos p span{ font-size: 0.8em;  }
+#container-novos p{  
+	color: white; position: relative; 
+	top: -30px; padding: 10px; 
+	margin: 0; height: 0; font-weight: 700; text-transform: uppercase;
+}
+#container-novos h1{ font-size: 1.2em; margin: 0; }
