@@ -8,6 +8,12 @@
 <?php wp_head(); ?>
 <script>
 	jQuery(document).ready(function(){
+		var altura = jQuery(window).height();
+		
+		/*variaveis para scroll*/
+		var offset = jQuery('#topo').offset().top;
+		var $meuMenu = jQuery('#topo'); 
+		
 		/*		Habilitar Megamenu	 	*/
 		jQuery("#container-menu-topo nav ul li").hover(
 			function(){
@@ -21,8 +27,7 @@
 			jQuery(".mega-menu").addClass("hide");
 		});
 		
-		var offset = jQuery('#topo').offset().top;
-		var $meuMenu = jQuery('#topo'); 
+		
 		jQuery(document).on('scroll', function () {
 			if (offset <= jQuery(window).scrollTop()) {
 				$meuMenu.addClass('fixo');
@@ -30,5 +35,17 @@
 				$meuMenu.removeClass('fixo');
 			}
 		});
+		
+		/* funcao menu mobile */
+		jQuery("#mobile-menu").css("height", altura);
+		jQuery("#mobile-ico-menu").toggle(
+			function(){
+				jQuery("#mobile-menu").removeClass("hide");	
+			},
+			function(){
+				jQuery("#mobile-menu").addClass("hide");	
+			}
+		);
 	});
+	
 </script>
