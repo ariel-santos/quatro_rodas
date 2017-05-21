@@ -272,3 +272,35 @@ function noticia_html($post){
 	
 <?php
 }
+
+/*					REGISTRANDO CARROS  			*/
+add_action('init', 'carro_register');
+function carro_register() {
+    $labels = array(
+        'name' => _x('carros', 'post type general name'),
+        'singular_name' => _x('carro', 'post type singular name'),
+        'add_new' => _x('Adicionar Nova', 'carro  item'),
+        'add_new_item' => __('Adicionar Nova carro'),
+        'edit_item' => __('Editar carro'),
+        'new_item' => __('Nova carro'),
+        'view_item' => __('Ver carro'),
+        'search_items' => __('Procurar carro'),
+        'not_found' =>  __('Nada Encontrado'),
+        'not_found_in_trash' => __('Nada Encontrado na Lixeira'),
+        'parent_item_colon' => ''
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'menu_icon'   => 'dashicons-format-aside',
+        'supports' => array('title','editor', 'thumbnail')
+      ); 
+    register_post_type( 'carro' , $args );
+}

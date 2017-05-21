@@ -15,6 +15,12 @@ Text Domain: quatro_rodas
 .no-padding{ padding: 0 !important;}
 .responsive-img{width: 100%; }
 
+.cinza{background: #474747 !important;}
+.preto{background: #242424 !important;}
+.vermelho{background: #ed1c24 !important;}
+
+.fixo { position:fixed; margin-top: 0px !important; }
+
 /* paina home */
 span.icone{ padding: 6px 6px; font-size: 10px; background: red; display: inline-block;}
 
@@ -39,3 +45,44 @@ span.icone{ padding: 6px 6px; font-size: 10px; background: red; display: inline-
 	margin: 0; height: 0; font-weight: 700; text-transform: uppercase;
 }
 #container-novos h1{ font-size: 1.2em; margin: 0; }
+
+/*topo */
+#topo{z-index: 10; background: white; width: 100%; }
+.row#container-anuncio{ margin: 10px 0 !important; }
+
+#container-menu-topo nav a.brand-logo{ padding: 10px;}
+#container-menu-topo nav ul#nav-mobile li:hover{ background: #242424 ; }
+
+.mega-menu{
+	position: absolute; z-index:10; 
+	border-bottom: 2px solid #ed1c24; padding: 10px 0; 
+	color: white;
+}
+
+#mega-menu-Carros{  position: absolute; z-index:10; border-bottom: 2px solid #ed1c24; background: #242424; padding: 10px 0; }
+#mega-menu-Carros:hover{ display: initial; }
+#mega-menu-Carros button{ background: #474747; border: 0; width: 100%; color: white; line-height: 30px; margin-top: 15px;}
+#mega-menu-Carros ul {float: left; margin: 0; padding: 0;}
+#mega-menu-Carros ul li{width: 20%; line-height: 40px; float: left; }
+#mega-menu-Carros ul li a{display: block; color: white; padding:0 10px;}
+#mega-menu-Carros ul li a:hover{ background: #474747 }
+
+#mega-menu-Testes .sub-menu{margin: 0; padding:0; border-right: 15px solid #242424;}
+#mega-menu-Testes .sub-menu ul{margin: 0; padding:20px 0; background: #474747;}
+#mega-menu-Testes .sub-menu ul li{  text-align: right; font-weight: 600;}
+#mega-menu-Testes .sub-menu ul li a{ display: block; color: white; padding: 5px 15px; font-size: 1em;}
+#mega-menu-Testes .sub-menu ul li:hover{ background: #242424;}
+#mega-menu-Testes .item{padding: 20px 10px;}
+#mega-menu-Testes h1{font-size: 1em; margin: 0; font-weight: 600; }
+#mega-menu-Testes p{ color: #ed1c24;}
+
+#container-mais-acessados{ color: white; background: #242424;}
+#container-mais-acessados ul{ margin: 0; padding: 0;}
+#container-mais-acessados ul li{ float: left;}
+#container-mais-acessados ul li:first-child{ margin-right: 20px; background: #ed1c24;}
+#container-mais-acessados ul li a{ float: left; }
+#container-mais-acessados ul li span{ float: left; }
+#container-mais-acessados ul li span img{     max-height: 28px;
+    position: absolute;}
+
+#container-mais-acessados ul li a{ display: block; padding: 5px 15px; font-weight: 600; color: white; font-size: 0.8em;}
