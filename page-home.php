@@ -8,19 +8,18 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/mansory.js"></script>
 		<script>
 			jQuery(document).ready(function(){
-				x = jQuery(document).width() - 50;  
+				x = jQuery(document).width() - 30;  
 				
-				if( x < 300){
+				if( x < 600){
 					modulo = x;
-				}else if (x < 650){
-					modulo = x / 2;
+					modulo2 = x;
 				}else{
 					modulo = x / 4;
+					modulo2 = x / 2;
 				}
 				
-				console.log(modulo); 
-				jQuery(".m1x1").css({"width": modulo});
-				jQuery(".m2x2").css({"width": modulo * 2});
+				jQuery(".m1x1").css({"width": modulo });
+				jQuery(".m2x2").css({"width": modulo2 });
 				
 				jQuery('#container-mansory').masonry({
 					itemSelector: '.modulo',
