@@ -50,6 +50,8 @@ span.icone{ padding: 6px 6px; font-size: 10px; background: red; display: inline-
 #topo{z-index: 10; background: white; width: 100%; }
 .row#container-anuncio{ margin: 10px 0 !important; }
 
+#container-menu-topo .mobile-ico img{ min-width: 25px; margin:15px 0 ; }
+#container-menu-topo .mobile-ico{display: block; }
 #container-menu-topo nav a.brand-logo{ padding: 10px;}
 #container-menu-topo nav ul#nav-mobile li:hover{ background: #242424 ; }
 
@@ -86,3 +88,12 @@ span.icone{ padding: 6px 6px; font-size: 10px; background: red; display: inline-
     position: absolute;}
 
 #container-mais-acessados ul li a{ display: block; padding: 5px 15px; font-weight: 600; color: white; font-size: 0.8em;}
+
+/*	 	Menu responsivo 	*/
+#mobile-menu{ background: rgba(0,0,0,0.8); position: absolute; z-index: 10; width: 100%;}
+#mobile-menu ul { margin: 0; padding: 0; float: left; width: 100%; background:#d41f1f;}
+#mobile-menu ul li { 
+	border-top: 1px solid #c21c1c; padding: 10px;
+    font-size: 1.2em; font-weight: 700;
+}
+#mobile-menu ul li a{ color: white; text-transform: uppercase; }
