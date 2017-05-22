@@ -62,6 +62,9 @@
 						<?php 
 					}
 				?>
+				<div class="modulo m1x1">
+					<img src="<?php echo get_template_directory_uri();?>/media/anuncio3.jpg" class="responsive-img">
+				</div>
 			</div>
 		</div>
 		<div class="row" id="container-novos">
