@@ -1,8 +1,9 @@
-<footer class="page-footer red">
+<footer class="page-footer vermelho">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">
-				<h5 class="white-text">Footer Content</h5>
+				<h5 class="white-text">Lorem ipsum dolor sit amet</h5>
+				<p class="grey-text text-lighten-4">, consectetur adipisicing elit. Veniam eum deserunt cupiditate consequuntur fugiat necessitatibus blanditiis, culpa eos. Fugiat, illo ullam officia perspiciatis suscipit magni laudantium earum quaerat dolore in.</p>
 			</div>
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Links</h5>
